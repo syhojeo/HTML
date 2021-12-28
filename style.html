@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello</title>
+    <!--
+    style Sheet (.css 파일을 불러오는방법과 html에 직접 코딩하는 방법 2가지가 있다)
+  -->
+  <!--
+    1. css 파일 불러오기
+    rel: 연결 관계
+    type: 가져오려는 외부문서의 종류
+    href: 가져오려는 외부 문서의 경로
+  -->
+  <!-- <link rel="stylesheet" href="style.css"/> -->
+  
+
+  <!--
+    2. style 태그 작성
+    BODY: 전체 화면 색 설정
+    .color: 색에 대한 클래스 저장
+  -->
+  <style>
+    /* BODY {background-color: rgb(0, 162, 255);} */
+    .red {background-color: red;}
+    .orange {background-color: orange;}
+    .yellow {background-color: yellow;}
+    .green  {background-color: green};
+  </style>
+</head>
+<body>
+  <!--
+    span: 인라인 태그
+    h1 : 블록 태그
+    태그 중첩 규칙
+    1. 블록 태그 내부에는 다른 블록 태그와 인라인 태그가 중첩될 수 있다
+    2. 블록 태그 중 <p> 태그 내부에는 인라인 태그만 중첩될 수 있다
+    3. 인라인 태그 내부에는 다른 인라인 태그만 중첩될 수 있다
+  -->
+  <span class="red">빨강</span>
+  <h1 class="orange">주황</h1>
+  <span class="yellow">노랑</span>
+  <span class="green">초록</span>
+</body>
+</html>
