@@ -1,7 +1,7 @@
 * {margin: 0; padding: 0;}
 /*.clearifx::before, clearfix::after {display: block; content: ; clear: both;}*/
 
-/* */
+/* wrap 페이지 전체 */
 #warp {width: 1200px; margin: 0 auto;}
 
 /* header */
