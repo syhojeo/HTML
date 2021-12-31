@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #content{
+      font-family: "Times New Roman", Times, serif;
+      line-height: 180%;
+      background-color: lightblue;
+    }
+
+    .content{
+      font-family: "Times New Roman", Times, serif;
+      line-height: 180%
+    }
+    .name{
+      color:blue;
+      font-weight: bold;
+    }
+    
+    #background{
+      background-color: silver;
+    }
+
+    .background{
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <!--div와 span-->
+  <div style="background-color: aquamarine; line-height: 180%">
+    <h2>HTML의 역사</h2>
+    <p>
+      HTML 최초의 일반 공개 설명은 1991년 말에 
+      <span style="color:blue">비너스리</span>
+      가 처음으로 인터넷에서 문서를 "HTML 태그"(HTML tag)로 부르면서 시작되었다.
+    </p>
+  </div>
+
+  <!-- class 와 id -->
+  <div id="content">
+    <h2>HTML의 역사</h2>
+    <p>
+      HTML 최초의 일반 공개 설명은 1991년 말에 
+      <span class="name">비너스리</span>
+      가 처음으로 인터넷에서 문서를 "HTML 태그"(HTML tag)로 부르면서 시작되었다.
+    </p>
+  </div>
+  
+  <!-- class의 특징 -->
+  <div>
+    <h2 class="background">HTML의 역사</h2>
+    <p>
+      HTML 최초의 일반 공개 설명은 1991년 말에 
+      <span class="background name">비너스리</span>
+      가 처음으로 인터넷에서 문서를
+      <span class="background name">HTML 태그(HTML tag)</span>
+      로 부르면서 시작되었다.
+    </p>
+  </div>
+
+  <!-- id 특징 -->
+  <div id="background" class="content">
+    <h2 class="name">HTML의 역사</h2>
+    <p>
+      HTML 최초의 일반 공개 설명은 1991년 말에 
+      <span class="name">비너스리</span>
+      가 처음으로 인터넷에서 문서를
+      <span class="name">"HTML 태그"(HTML tag)</span>
+      로 부르면서 시작되었다
+    </p>
+  </div>
+  <!-- 레이아웃 -->
+  <div style="float: left">
+    <h2>왼쪽 영역</h2>
+    <p>제주도는 대한민국의 남해상에 위치하는 섬이다.</p>
+  </div>
+
+  <div style="float: right">
+    <h2>오른쪽 영역</h2>
+    <p>독도는 경삭북도 울릉군 울릉읍 독도리에 속한 대한민국의 영토이다.</p>
+  </div>
+</body>
+</html>

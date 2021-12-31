@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table, tr, td, th{
+      border: 1px solid black;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>출석표</caption>
+    <tr>
+      <th>이름</th> <th>나이</th>
+    </tr>
+    
+    <tr>
+      <td>김철수</td> <td>23</td>
+    </tr>
+    
+    <tr>
+      <td>홍길동</td> <td>25</td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td rowspan="2">김철수</td> <td>1</td> <td>2</td>
+    </tr>
+
+    <tr>
+      <td>3</td> <td>4</td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <td colspan ="2">김철수</td>
+    </tr>
+    <tr>
+      <td>1</td> <td>2</td>
+    </tr>
+  </table>
+  <br/><br/><br/><br/><br/><br/>
+
+  <table>
+    <tr>
+      <th colspan="7">1학기 중간 시험 시간표</th>
+    </tr>
+
+    <tr bgcolor="pink">
+      <td colspan="2">교시/요일</td> <td>월</td> <td>화</td> <td>수</td> <td>목</td> <td>금</td> 
+    </tr>
+
+    <tr>
+      <td colspan="2">1교시</td>
+    </tr>
+
+    <tr>
+      <td colspan="2">2교시</td>
+    </tr>
+
+    <tr>
+      <td colspan="2">3교시</td> <td></td> <td>c언어</td> <td></td> <td>엑셀</td> <td>교양1</td>
+    </tr>
+
+    <tr>
+      <td colspan="2">4교시</td> <td></td> <td rowspan="3"></td> <td>파이썬</td> <td></td> <td></td>
+    </tr>
+
+    <tr>
+      <td colspan="2">5교시</td> <td>스마트</td> <td></td> <td>포토샵</td> <td></td>
+    </tr>
+
+    <tr>
+      <td colspan="2">6교시</td> <td></td> <td>html</td> <td></td> <td>교양</td>
+    </tr>
+  </table>
+</body>
+</html>

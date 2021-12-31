@@ -1,0 +1,81 @@
+<!-- style sheet -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello</title>
+    <!--
+    style Sheet (.css 파일을 불러오는방법과 html에 직접 코딩하는 방법 2가지가 있다)
+  -->
+  <!--
+    1. css 파일 불러오기
+    rel: 연결 관계
+    type: 가져오려는 외부문서의 종류
+    href: 가져오려는 외부 문서의 경로
+  -->
+  <!-- <link rel="stylesheet" href="style.css"/> -->
+  
+
+  <!--
+    2. style 태그 작성
+    BODY: 전체 화면 색 설정
+    .color: 색에 대한 클래스 저장
+  -->
+  <style>
+    /* BODY {background-color: rgb(0, 162, 255);} */
+    .red {background-color: red;}
+    .orange {background-color: orange;}
+    .yellow {background-color: yellow;}
+    .green  {background-color: green};
+  </style>
+</head>
+<body>
+  <!--
+    span: 인라인 태그
+    h1 : 블록 태그
+    태그 중첩 규칙
+    1. 블록 태그 내부에는 다른 블록 태그와 인라인 태그가 중첩될 수 있다
+    2. 블록 태그 중 <p> 태그 내부에는 인라인 태그만 중첩될 수 있다
+    3. 인라인 태그 내부에는 다른 인라인 태그만 중첩될 수 있다
+  -->
+  <span class="red">빨강</span>
+  <h1 class="orange">주황</h1>
+  <span class="yellow">노랑</span>
+  <span class="green">초록</span><br/><br/><br/><br/><br/><br/>
+
+  
+    <!--p태그(블럭태그)에서 여러가지 색깔 지정 방법-->
+    <p style="background-color: transparent">
+      배경색 기본 (transparent-투명한)
+    </p>
+    <p style="background-color: rgb(255,0,0)">
+      RGB 배경색 지정
+    </p>
+    <p style="background-color: #0000ff;">
+      16진수 배경색 지정
+    </p>
+    <p style="background-color: green">
+      표준 이름 배경색 지정
+    </p><br/><br/><br/><br/><br/><br/>
+
+
+  <!--
+  font 태그: 글자를 꾸미는데 가장 기본이 되는 태그
+  size, color, face(글씨체) 3가지 속성을 가진다
+  font 태그 또한 html 에서 작성하기 보단 css 파일에서 주로 작성한다
+  -->
+  <p>
+  <font size="5">텍스트 크기를 지정하는 size 속성</font>
+  <font color="red">텍스트 색상</font>을 지정하는 size 속성
+  <font face="돋움">돋음 글꼴로 지정된 텍스트입니다.</font>
+  </p>
+
+  <!--color: 텍스트의 색상은 RGB값, 16진수 색상 값, 표준 색상 이름으로 나타낼 수 있다-->
+  <p style="color: #0000ff">16진수 값을 이용한 파란색 텍스트</p>
+  <!--rgba는 마지막갑싱 글자의 투명도 까지 표현할 수 있다-->
+  <p style="color: rgba(255,0,0,0.6)">rgb 값을 이용한 빨간색 텍스트</p>
+  <p style="color: green">표준 색상 이름을 사용한 초록색 텍스트</p><br/>
+</body>
+</html>

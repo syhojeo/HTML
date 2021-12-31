@@ -1,0 +1,108 @@
+<!-- table 표 만드법 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <!-- table -->
+  <table border="1"> <!-- border 테두리 굵기 -->
+    <tr>            <!-- 행 -->
+      <td>이름</td> <!-- 열 -->
+      <td>나&nbsp;&nbsp;이</td>
+      <td>성별</td>
+    </tr>
+
+    <tr>
+      <td>한강</td>
+      <td>20</td>
+      <td>남자</td>
+    </tr>
+
+    <tr>
+      <td>고라니</td>
+      <td>100</td>
+      <td>중성</td>
+    </tr>
+  </table>
+  <br/><br/><br/><br/><br/><br/>
+
+  <!-- caption, th-->
+  <table>
+    <caption>출석표</caption> <!-- caption: 표 상단에 제목, 설명 넣음-->
+    <tr>
+      <th>이름</th> <!-- 테이블에서 제목이 되는 헤더셀 (굵기가 진함)-->
+      <th>나이</th>
+    </tr>
+    
+    <tr>
+      <td>김철수</td>
+      <td>23</td>
+    </tr>
+    
+    <tr>
+      <td>홍길동</td>
+      <td>25</td>
+    </tr>
+  </table>
+  <br/><br/><br/><br/><br/><br/>
+  
+  <!-- 행 열 병합-->
+  <table>
+    <tr>
+      <td colspan="2">김철수</td>
+    </tr>
+      <td>1</td>
+      <td>2</td>
+  </table>
+
+  <!-- bordercolor: 테두리 색깔-->
+  <table border="1" bordercolor="blue" width ="500" height="300" align= "center">
+    <tr bgcolor="blue" align ="center">
+      <p><td colspan = "3" span style="color:white">오늘의 수입/지출</td></p>
+    </tr>
+    <!-- bgcolor: background color-->
+    <tr align = "center" bgcolor="skyblue">
+      <td>내용</td>
+      <td>수입</td>
+      <td>지출</td>
+    </tr>
+
+    <tr>
+      <td>월급!</td>
+      <td>1,000,000</td>
+      <td></td>
+    </tr>
+    
+    <tr>
+      <td>점심값</td>
+      <td></td>
+      <td>5,000</td>
+    </tr>
+
+    <tr>
+      <td>부모님 선물</td>
+      <td></td>
+      <td>30,000</td>
+    </tr>
+
+    <tr>
+      <td rowspan="3" align="center" bgcolor="skyblue">총계</td>
+      <td>수입</td>
+      <td>지출</td>
+    </tr>
+
+    <tr>
+      <td>1,000,000</td>
+      <td>35,000</td>
+    </tr>
+
+    <tr>
+      <td>남은돈</td>
+      <td>965,000</td>
+    </tr>
+  </table>
+</body>
+</html>

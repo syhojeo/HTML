@@ -1,0 +1,51 @@
+<!-- table -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <!-- table style 설정 -->
+    <style>
+      table,
+      th,
+      td {
+        /* 같은 속성의 경우 스페이드 만으로 구분가능*/
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <table>
+    <caption>성적표</caption>
+    <tr>
+      <th>이름</th>
+      <th>구분</th>
+      <th>국어</th>
+      <th>수학</th>
+      <th>영어</th>
+    </tr>
+    
+    <tr>
+      <td rowspan="2">김철수</td>
+      <td>중간고사</td>
+      <td>70</td>
+      <td>80</td>
+      <td>90</td>
+    </tr>
+
+    <tr>
+      <td>기말고사</td>
+      <td>80</td>
+      <td>90</td>
+      <td>100</td>  
+    </tr>
+
+    <tr>
+      <td colspan="5">출석 100%, 지각 0, 결석 0</td>
+    </tr>
+  </table>
+</body>
+</html>
