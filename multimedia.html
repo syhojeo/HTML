@@ -1,0 +1,106 @@
+<!-- figure, imagemap, audio video 태그를 이용한 멀티미디어 사용 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figure 태그</title>
+    <style>
+        video {
+            max-width: 80%;
+            display: block;
+            margin: 20px auto;
+        }
+
+        #container .main_visual {
+            position: relative;
+            overflow: hidden;
+            padding: 53.25%;
+        }
+
+        /*
+        position: 컨텐츠가 배치가 시작될 위치를 설정한다 
+        (이를 통해 텍스트를 동영상 위에 올리거나 하는 등의 기능을 수행할 수 있다)
+        left, top: 위아래 간격
+        overflow: 비디오 크기가 페이지를 넘어갈 경우 어떻게 할지에 대한 설정
+        */
+        #container .main_visual video {
+            min-width: 10%;
+            min-height: 10%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<!-- 
+    figure: 이미지나 글자, 삽화, 도표 등을 묶어서 영역 설정
+    figcaption: <figure> 태그에 포함되어 이미지나 삽화, 도표 등의 제목이나 설명 표시
+-->
+
+<body>
+    <figure>
+        <figcaption>아린</figcaption> <!-- 위에 설명 표시 -->
+        <img src="./IMAGE/arin.jpg" alt="아린" height="100%">
+    </figure>
+
+    <figure>
+        <img src="./IMAGE/winter.jpg" alt="윈터" height="100%">
+        <img src="./IMAGE/hanhyojoo.jpg" alt="한효주" height="300">
+        <img src="./IMAGE/heri.jpg" alt="혜리" height="100%">
+        <figcaption>연예인</figcaption> <!-- 아래에 설명 표시 -->
+    </figure>
+
+    <!-- 
+        이미지 맵: 하나의 이미지내에서 좌표를 설정하여 링크를 설정하기 위해서는 image map을 사용
+        (이미지를 누르면 웹사이트로 이동함)
+    -->
+
+    <img src="./IMAGE/hanjimin.jpg" alt="hanjimin" usemap="#imagemap">
+    <map name="imagemap">
+        <!-- coords = "xStart, yStart, xFinish, yFinish" -->
+        <area shape="rect" coords="0,0,500,500" herf="http://naver.com" target="_blank">
+        <area shape="rect" coords="100,200,200,200" href="http://daum.net" target="_blank">
+    </map>
+
+    <!--
+        audio: 문서에 오디어 파일을 삽입하여 음악을 재생할 수 있게 만들어주는 태그
+    -->
+    <p>
+    <h1> AUDIO SAMPLE </h1>
+    <h3> Play this sound </h3>
+    <audio controls preload>
+        <source src="./IMAGE/sound.mp3" controls autoplay loop>
+        Your browser does not support the audio element
+    </audio>
+    </p>
+
+    <!-- 
+        video: html문서에 비디오 (동영상) 파일을 삽입하기 위한 태그
+        src: 경로지정
+        poster: 비디오 재생전 이미지 파일 경로 지정
+        autoplay: 자동 재생 여부 지정
+        loop: 반복 여부 지정
+        controls: 재생 도구 출력 여부
+    -->
+    <p>
+        <video controls poster="IMAGE/winter.jpg" width="1000px" height="700px">
+            <source src="IMAGE/윈터-직캠.mp4" type="video/mp4">
+            <strong>Your browser does not support the video tag.</strong>
+        </video>
+    </p>
+
+    <div id="container">
+        <div class="main_visual">
+            <video autoplay loop>
+                <source src="IMAGE/Skyscrapers - 80724.mp4" type="video/mp4">
+                <strong>Your browser does not support the video tag.</strong>
+            </video>
+        </div>
+    </div>
+</body>
+
+</html>
