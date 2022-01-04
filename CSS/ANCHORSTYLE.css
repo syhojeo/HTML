@@ -1,0 +1,40 @@
+/* anchor_03.html 관련 stylesheet anchor 스타일링하기 */
+body, ul {margin: 0; padding: 0;}
+a {text-decoration: none; color: black;}
+li {list-style: none;}
+
+/* main */
+#newsWrap {width: 700px; margin: 10px auto; border: 1px solid lightseagreen;}
+
+/* newsWrap 영역 내 우측에 20px 만큼의 여백을 남긴다. */
+#newsWrap ul {margin-right: 20px; border-right: 1px solid lightpink;}
+
+/* li태그의 배경으로 bullet 이미지를 삽입 */
+#newsWrap ul li {
+  height: 40px;
+  /*
+      a 태그에 height가 있는데 li 태그에도 넣은 이유는
+      특정 브라우저에서 li 태그의 높이를 인식하지 못할 수도 있기 때문에 넣어주는 것이 좋다.
+  */
+  background: url(../IMAGE/whiteboard-g27c6b0bd8_1280.png) no-repeat 10px;
+}
+
+/*
+    a 태그에 너비와 높이를 줘서 우측에 날짜가 들어갈 공간을 만든다.
+    두 줄 이상의 길이들은 한줄로 만들어 너비 이상이 되면 ... 으로 표시
+*/
+
+#newsWrap ul li a {
+  display: block; width: 500px; height: 40px;
+  /* 35px 만큼 들여쓰기 / 한 줄 높이 40px */
+  text-indent: 35px; line-height: 40px;
+  /* 두줄 -> 한줄 ; 넘어가는 글자는 숨기기 ; 끝 단어 중 뒷 부분을 ...으로 표시 */
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  float: left; /* 좌측 정렬 */
+}
+
+/* 날짜 우측 정렬 */
+#newsWrap ul li span {float: right; line-height: 40px;}
+/* hover: 글에 마우스를 올리면 글과 날짜 둘 다 변경 */
+#newsWrap ul li a:hover {color: #0400ff; text-shadow: 0 0 5px #ff6565;}
+#newsWrap ul li a:hover + span {color: #0400ff; text-shadow: 0 0 5px #ff6565;}
