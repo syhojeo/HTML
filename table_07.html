@@ -1,0 +1,160 @@
+<!-- table과 form을 이용한 게시판 만들기-->
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>게시판 만들기</title>
+        <link rel="stylesheet" href="CSS/formstyle.css">
+    </head>
+    <body>
+        <div id="boardWrap">
+            <table id="table">
+                <thead>
+                    <caption>게시판</caption>
+                    <tr>
+                        <th scope="col" class="no">no.</th>
+                        <th scope="col" class="title">title</th>
+                        <th scope="col" class="writer">writer</th>
+                        <th scope="col" class="date">date</th>
+                        <th scope="col" class="read">read</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15</td>
+                        <td class="listTitle"><a href="#">eget vehicula metus. In euismod sollicitudin lorem eu aliquet.</a></td>
+                        <td>Host Admin</td>
+                        <td>2011.05.11</td>
+                        <td>15000</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td class="listTitle"><a href="#">Lorem Ipsum dolor sit amet, consectetur adipixcing elit.</a></td>
+                        <td>Sec Admin</td>
+                        <td>2011.05.11</td>
+                        <td>1500</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td class="listTitle"><a href="#">Vivamus viverra porttitor commodo.</a></td>
+                        <td>Sec Admin</td>
+                        <td>2011.05.11</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="listTitle"><a href="#">In pulvinar fermentum erat a tincidunt. Nulla id magna sit lorem eu aliquet.</a></td>
+                        <td>Web Admin</td>
+                        <td>2011.05.11</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td class="listTitle"><a href="#">Lorem Ipsum dolor sit amet, consectetur adipixcing elit.</a></td>
+                        <td>Web Admin</td>
+                        <td>2011.05.11</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="listTitle"><a href="#">Lorem Ipsum dolor sit amet, consectetur adipixcing elit.</a></td>
+                        <td>Web Admin</td>
+                        <td>2011.05.11</td>
+                        <td>15000</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="listTitle"><a href="#">Vivamus viverra porttitor commodo.</a></td>
+                        <td>Web Admin</td>
+                        <td>2011.05.11</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="listTitle"><a href="#">In pulvinar fermentum erat a tincidunt. Nulla id magna sit lorem eu aliquet.</a></td>
+                        <td>Sec Admin</td>
+                        <td>2011.05.11</td>
+                        <td>15000</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="listTitle"><a href="#">Lorem Ipsum dolor sit amet, consectetur adipixcing elit.</a></td>
+                        <td>Host Admin</td>
+                        <td>2011.05.11</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="listTitle"><a href="#">Vivamus viverra porttitor commodo.</a></td>
+                        <td>Host Admin</td>
+                        <td>2011.05.11</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="listTitle"><a href="#">eget vehicula metus. In euismod sollicitudin lorem eu aliquet.</a></td>
+                        <td>Host Admin</td>
+                        <td>2011.05.11</td>
+                        <td>15000</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="listTitle"><a href="#">Lorem Ipsum dolor sit amet, consectetur adipixcing elit.</a></td>
+                        <td>Sec Admin</td>
+                        <td>2011.05.11</td>
+                        <td>1500</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="listTitle"><a href="#">Vivamus viverra porttitor commodo.</a></td>
+                        <td>Sec Admin</td>
+                        <td>2011.05.11</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="listTitle"><a href="#">In pulvinar fermentum erat a tincidunt. Nulla id magna sit lorem eu aliquet.</a></td>
+                        <td>Web Admin</td>
+                        <td>2011.05.11</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="listTitle"><a href="#">Lorem Ipsum dolor sit amet, consectetur adipixcing elit.</a></td>
+                        <td>Web Admin</td>
+                        <td>2011.05.11</td>
+                        <td>150</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form>
+                <!-- 
+                    form 태그를 적용할 때는 반드시 fieldset을 적어주자!!
+                    => form 요소에서 연관된 요소들을 하나의 그룹으로 묶을 때 사용
+                -->
+
+                <fieldset>
+                    <label for="searchBox"></label>
+                    <label for="searchBtn"></label>
+                    <!-- placeholder: searchbox 내부에 씌여짐-->
+                    <input type="text" id="searchBox" placeholder="검색어를 입력해주세요.">
+                    <input type="button" id="searchBtn" value="Search">
+                </fieldset>
+            </form>
+            <div id="pageMv">
+                <a href="#">Prev</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+                <a href="#">Next</a>
+            </div>
+        </div>
+    </body>
+</html>
