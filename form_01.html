@@ -1,0 +1,78 @@
+<!-- form 을 이용하여 사용자로 부터 데이터를 입력 받기-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        login
+        lable의 for와 input의 id 은 같게 할것 (그래야 값을 사용가능)
+        name: 그룹
+
+        form tag
+        -입력 양식은 사용자로부터 데이터를 받아서 서버로 넘기는데 사용된다
+
+        action tag
+        <form action="입력을 처리하는 서버스크립트의 주소" method="get / post">
+        action: 사용자가 입력한 데이터를 받아서 처리하는 스크립트 주소를 URL 형식으로 적는다
+        method: 데이터를 보내는 방식을 적는다
+    -->
+    
+    <form action="login_page.php">
+        <div>
+            <label for="userid">ID:</label><br/>
+            <input type="text" name="userId"><br/>
+            <label for="userPw">password: </label><br/>
+            <input type="text" name="userPw"><br/>
+            <input type="submit">
+        </div>
+        <br/><br/><br/><br/>
+
+        <div>
+            <label for="name">이름</label>
+            <input type="text" name="name">
+        </div>
+        
+        <div>
+            <label for="account">이메일</label>
+            <input type="text" id="account">
+        </div>
+        
+        <div>
+            <label for="codenumber">패스워드</label>
+            <input type="password" id="codenumber">
+        </div>
+        <br/><br/><br/><br/>
+        
+        <!-- 
+            size 칸의 길의 조절
+            maxlength: 최대 넣을 수 있는 문자 갯수
+            value: input 칸에 들어가는 초기값
+        -->
+        <div>
+            <label for="name">이름:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" id="name" value="홍길동" size="20" maxlength="11" >
+        </div>
+        
+        <div>
+            <label for="phone">전화번호</label>
+            <input type="text" size="20" maxlength="11">
+        </div>
+        <br/><br/><br/><br/>
+
+        <!-- 
+            readonly: input 이 안되고 읽기만 가능함
+            disable : input 기능을 사용할 수 없음
+        -->
+        <div>
+            <labe for="option">구분</labe>
+            <input type="text" id="option" value="신규회원" readonly>
+            <input type="text" value="사업자회원" disabled>
+        </div>
+    </form>
+</body>
+</html>
