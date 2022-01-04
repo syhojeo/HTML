@@ -1,0 +1,60 @@
+<!-- 외부 링크, 내부링크 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="https://www.naver.com">네이버</a>
+    <!-- 해당 주소의 이미지 다운로드 -->
+    <a href="IMAGE/arin.jpg" download>이미지</a>
+    <a href="list_01.html" .html">list html 문서로 이동</a>
+    <a href="#">주소 없음</a>
+    <!-- a태그 안에 넣어야 링크 가능 (스타일은 적용됨)-->
+    <h2><a href="https://www.nate.com">a네이트</a> h2네이트</h2>
+    <p><a href="https://www.naver.com">a네이버</a> p네이버</p>
+    <!-- 그룹화: 여러 요소의 링크가 같은 사이트로 이동하는 경우 -->
+    <a href="https://www.naver.com">
+        <img src="IMAGE/hanjimin.jpg" alt="naver로 이동하는 연예인이미지" width="300">
+        <p>네이버로 이동</p>
+    </a>
+    <!-- 같은 문서 내 태그 연결-->
+    <p>
+    <ul id="list">
+        <li><a href="#p1">1st</a></li>
+        <li><a href="#p2">2nd</a></li>
+        <li><a href="#p3">3th</a></li>
+    </ul>
+    <h2 id="p1">1st</h2>
+    <p>-----</p>
+    <a href="#list">목차로 이동</a>
+    <hr>
+    <h2 id="p2">2nd</h2>
+    <p>-----</p>
+    <a href="#list">목차로 이동</a>
+    <hr>
+    <h2 id="p3">3th</h2>
+    <p>-----</p>
+    <a href="#list">목차로 이동</a>
+    </p>
+
+    <h1>대제목</h1>
+    <p><a href="#subtitle2">소제목2로 건너뛰기</a></p>
+
+    <h2>소제목1</h2>
+    <p>소제목1의 본문</p>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <h2 id="subtitle2">소제목2</h2>
+    <p>소제목2의 본문</p>
+
+    <p><a href="#top">맨 위로 바로가기</a></p>
+</body>
+
+</html>
