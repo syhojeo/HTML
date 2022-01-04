@@ -1,0 +1,80 @@
+<!-- form 의 여러가지 타입들 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        radio, checkbox
+    -->
+    <form>
+        <p>성별을 선택하세요.</p>
+        <div>
+            <!-- for 와 id값은 동일해야한다-->
+            <label for="male">남자</label>
+            <input type="radio" id="male" name="gender">
+            <label for="female">여자</label>
+            <input type="radio" id="female" name="gender">
+        </div>
+
+        <p>좋아하는 음식들을 선택하세요.</p>
+        <div>
+            <label for="kimchi">김치</label>
+            <input type="checkbox" id="kimchi" name="food">
+            <label for="chicken">치킨</label>
+            <input type="checkbox" id="chicken" name="food">
+            <label for="pizza">피자</label>
+            <input type="checkbox" id="pizza" name="food">
+            <label for="coke">콜라</label>
+            <input type="checkbox" id="coke" name="food">
+        </div>
+
+        <br/><br/><br/><br/>
+
+        <div>
+            이름: <input type="text" value="홍길동"> <br>
+            이메일: <input type="text" value="qwerty1234@naver.com"><br>
+            비밀번호: <input type="password" value="11111111111"><br>
+            국적: <input type="radio" name="from" value="내국인"> 내국인
+            <input type="radio" name="from" value="외국인"> 외국인 <br>
+            <!-- type="file": 파일을 입력받기 위해 사용되는 파일위젯 -->
+            신분증 파일 보내기 <input type="file"> <br>
+            메시지: <input type="textarea"> <br>
+            초기화: <input type="reset"><br>
+            <input type="submit"> <br>
+            </div>
+
+        <br/><br/><br/><br/>
+        
+        <div>
+            <label for="name">이름</label>
+            <input type="text" name="name">
+        </div>
+
+        <div>
+            <label for="mail">이메일</label>
+            <input type="text" id="mail">
+        </div>
+        
+        <div>
+            <label for="codenumber">패스워드</label>
+            <input type="password" id="codenumber">
+        </div>
+
+        <!-- 
+            type속성에 submit 을 속성값을 지정하면
+            <form> 태그의 action 과 method 속성에 지정한 값에 따라 입력받은 데이터를 서버로 전송한다.
+        -->
+        <div>
+            <button type="submit">전송</button>
+            <button type="reset">초기화</button>
+            <!-- onclick="alert" 버튼 클릭시 메세지 출력-->
+            <button type="button" onclick="alert('버튼 클릭')">버튼</button>
+        </div>
+    </form>
+</body>
+</html>
