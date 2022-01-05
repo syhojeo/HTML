@@ -1,0 +1,57 @@
+<!-- iframe -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<>
+    <!-- 
+        iframe: html문서에 다른 페이지를 삽입할 수 있다.
+        주로 광고페이즈 등을 삽입할 때 유용함
+    -->
+
+    <h1>아이프레임을 이용해보자</h1>
+    <iframe src="https://www.daum.net/" title="다음 사이트" width="400px" height="300px" 
+    style="border: 5px solid slateblue">
+    </iframe>
+
+    <br/><br/><br/><br/>
+    <h1>iframe의 scrc값을 바꾸자</h1>
+    <div>
+        <h3>버튼을 눌러주세요</h3><br/>
+        <!-- 
+            anchor 태그의 target 값을 이용해서 iframe을 만들 수 있다 
+            다만 링크를 만들 곳이 꼭 필요하다 (ex button, 텍스트 등)
+        -->
+        <a href="https://www.daum.net/7" target="iframe"><button>링크1</button></a>
+        <a href="https://www.nate.com/5" target="iframe"><button>링크2</button></a>
+        <a href="https://www.naver.com/8" target="iframe"><button>링크3</button></a>
+    </div>
+    
+    <!-- 구글은 iframe이 안된다 -->
+    <iframe src="https://www.google.com/" title="구글" name="iframe" width="400px" height="300px"></iframe>
+    <br/><br/><br/><br/>
+
+
+    <!-- anchor와 target을 이용해서 iframe 영역에서 여러 동영상 실행하기 -->
+    <h1>iframe에 youtube 넣기</h1>
+    <div>
+        <h3>
+            버튼을 눌러주세요<br/>
+            1,2 왼쪽/ 3,4 오른쪽<br/>
+        </h3>
+        <a href="https://www.youtube.com/embed/ZqPq-o1ainQ" target="iframe1"><button>링크1</button></a>
+        <a href="https://www.youtube.com/embed/zobnLwgk22I" target="iframe1"><button>링크2</button></a>
+        <a href="https://www.youtube.com/embed/DwHynBTEtTM" target="iframe2"><button>링크3</button></a>
+        <a href="https://www.youtube.com/embed/XI_H3n3bU3o" target="iframe2"><button>링크4</button></a>
+    </div>
+
+    <div>
+        <iframe src="https://www.youtube.com/embed/ZqPq-o1ainQ" name="iframe1" title="유튜브 영상 가져오기" width="400px" height="300px"></iframe>
+        <iframe src="https://www.youtube.com/embed/l93WJUIUgxA" name="iframe2" title="유튜브 영상 가져오기" width="400px" height="300px"></iframe>
+    </div>
+</body>
+</html>
