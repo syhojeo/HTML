@@ -1,0 +1,116 @@
+<!-- form 연습 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" padding: 5px>
+        <tr>
+            <td>
+                <div>
+                    <form>
+                        <fieldset style="width: 250px;">
+                            <legend>개인 정보 입력</legend>
+                    
+                            <label for="이름">이름</label>
+                            <input id="이름" type="text">
+            
+                            <br/>
+                            <label for="나이">나이</label>
+                            <input id="나이" type="text">
+                        </fieldset>
+                    </form>
+                </div>
+            </td>
+
+            <td>
+                <div>
+                    <form>
+                        <fieldset style="width: 270px; ">
+                            <legend>개인 정보 입력</legend>
+                            <!-- id 중복되면 안되지만 편의상 중복 시킴 -->
+                            <label for="이름">이름:</label>
+                            <input id="이름" type="text" name="이름"><br/>
+            
+                            <label for="주민번호">주민번호:</label>
+                            <input id="주민번호" type="text" name="주민번호"><br/>
+            
+                            <label for="아이디">아이디:</label>
+                            <input id="아이디" type="text" name="아이디"><br/>
+            
+                            <label for="비밀번호">비밀번호</label>
+                            <input id="비밀번호" type="password" name="비밀번호"><br/>
+                    
+                            <label for="남자">성별: 남</label>
+                            <input id="비밀번호" type="radio" name="성별">
+            
+                            <label for="여자">여</label>
+                            <input id="여자" type="radio" name="성별"><br/>
+            
+                            <label for="연예">관심사: 연예</label>
+                            <input id="연예" type="checkbox" name="관심사">
+            
+                            <label for="스포츠">스포츠</label>
+                            <input id="스포츠" type="checkbox" name="관심사">
+            
+                            <label for="IT">IT</label>
+                            <input id="IT" type="checkbox" name="관심사"><br/>
+            
+                            <button type="submit">submit</button>
+                            <button type="reset">reset</button>
+                            
+                        </fieldset>
+                    </form>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div>
+                    <form>
+                        <fieldset>
+                            <legend>개인 정보 입력</legend>
+                            
+                            <p>
+                                지역선택 (size, multiple 속성 추가)<br/>
+                                <select size="5" multiple>
+                                    <option>성남시</option>
+                                    <option>수원시</option>
+                                    <option>용인시</option>
+                                    <option>안양시</option>
+                                    <option>과천시</option>
+                                    <option>파주시</option>
+                                </select>
+                            </p>
+            
+                            <p>
+                                지연선택 (optgroup 태그 포함)<br/>
+                                <select>
+                                    <optgroup label="서울">
+                                        <option>송파구</option>
+                                        <option>강남구</option>
+                                        <option>서초구</option>
+                                        <option>중구</option>
+                                    </optgroup>
+                                    <optgroup label="경기도">
+                                        <option>성남시</option>
+                                        <option>수원시</option>
+                                        <option>용인시</option>
+                                        <option>안양시</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
