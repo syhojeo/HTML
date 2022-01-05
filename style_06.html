@@ -1,0 +1,145 @@
+<!-- 다양한 style 지정 복습 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style 태그에 설정하여 작성-->
+    <!-- <style>
+        body {
+            font-size:12px;
+            color: blue;
+            font-family: 궁서체;
+            font-weight: bold;
+        }
+        tr, td {
+            font-size:16px;
+            color:red;
+            font-family: 맑은 고딕;
+            font-weight: bold;
+        }
+    </style> -->
+</head>
+<!-- body style 적용 -->
+<!-- <body style="font-size:30pt; color:black; font-family: 맑은고딕;"> -->
+<body>
+    <!--
+        style 에서 두개 이상의 속성을 사용할 경우 각 속성당 ; 을 표기해야 적용됨
+
+        font-size : "px" OR "pt" 나 "em" OR "%" 등을 사용하여 폰트 크기를 조절하여 사용 할 수 있다
+        color : 색상을 바꿀 수 있다
+        font-family : 서체(글꼴)을 바꿀 수 있다
+        font - style :  기울기 , nomal : 기울기 없음 , italic : 이탤릭체
+        font-weight : 굵기정도 , nomal : 굵기 없음, bold: 굵기 표기  100~900-> 100단위
+        
+        line-height : 줄 간격
+        - 단위 : px 또는 % 등의 단위를 사용가능 하며 ,단위없이 '1.5'와 같은 숫자를 입력할 경우 em과 동일하게 인식
+    -->
+
+    <!-- 글자 크기 -->
+    <div>
+        <p>aaa</p>
+        <p style="font-size:2em">aaa 2em</p>
+        <p style="font-size:200%">aaa 200%</p>
+        <p style="font-size:8px">aaa 8px</p>
+        <p style="font-size:8pt">aaa 8pt</p>
+        <p style="font-size:12px">aaa 12px</p>
+        <p style="font-size:50pt">aaa 5pt</p>
+    </div>
+
+
+    <!-- 글자 두께 -->
+    <div>
+        <p>aaa</p>
+        <p style="font-weight:bold">aaa bold</p>
+        <p style="font-weight:900">aaa 900</p>
+        <p style="font-weight:bolder">aaa bolder</p>
+        <p style="font-weight:nomal">aaa nomal</p>
+        <p style="font-weight:  lighter">aaa lighter</p>
+        <p style="font-weight:400">aaa 400</p>
+    </div>
+
+    <div>
+        <p style="font-size:50px; color:red; font-weight:bold; font-style:italic;">aaa</p>
+    </div>
+
+    <!--
+        text-decoration: 문자(열)에 밑줄, 취소선 등을 넣을 수 있는 속성
+        none: 효과없음
+        underline: 밑줄
+        overline: 윗줄
+        line-through: 취소선
+    -->
+    <div>
+        <p style="text-decoration:none">효과없음</p>
+        <p style="text-decoration:underline">텍스트 밑선</p>
+        <p style="text-decoration: line-through">텍스트 취소선</p>
+        <p style="text-decoration: overline;">텍스트 윗선</p>
+        <p style="text-decoration: underline overline;">텍스트 밑위</p>
+    </div>
+
+    <!-- 
+        text-transform: 대소문자 변환(영문만 적용)
+        none: 효과없음
+        uppercase: 모두 대문자로 변환
+        lowercase: 모두 소문자로 변환
+        capitalize: 띄워쓰기 할 떄 첫 글자를 대문자로 변환
+    -->
+    <div>
+        <p style="text-transform:none">aaa</p>
+        <p style="text-transform: uppercase;">aaa</p>
+        <p style="text-transform: lowercase;">AAA</p>
+        <p style="text-transform: capitalize;">a aa</p>
+    </div>
+
+    <!-- 
+        letter-spacing: 글자들간의 간격
+        vertical-align: 수직정렬 (top / middle / bottom)
+    -->
+    <div>
+        <p style="letter-spacing: 50px;">안녕하세요</p>
+        
+        <table border="1">
+            <tr>
+                <td height="200" style="vertical-align: top;"> aa </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 
+        white-space: 줄바꿈에 대한 설정
+        normal: 기본속성, 자연스런 줄바꿈
+        nowrap: 줄 바꿈을 하지 않음
+    -->
+    <div>
+        <table border="1">
+            <tr>
+                <td width="400" style="white-space: nowrap;">
+                    가나다라마바사아자차카타파하가나다라마바사아자차카타파하
+                    가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하
+                    가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하
+                </td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <tr>
+                <td width="400" style="white-space: normal;">
+                    가나다라마바사아자차카타파하가나다라마바사아자차카타파하
+                    가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하
+                    가나다라마바사아자차카타파하가나다라마바사아자차카타파하가나다라마바사아자차카타파하
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- span 태그안의 스타일 지정-->
+    <div>
+        <span style="font-size:20px; color:blue; font-style:italic;">aaa</span><br/>
+        aaa
+    </div>
+
+</body>
+</html>
