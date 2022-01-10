@@ -1,0 +1,43 @@
+/*
+배경 이미지 설정
+
+(1) scroll - 기본 값으로 사용하거나 사용하지 않거나 같다, 이미지 반복, 문자열이 길 경우 스크롤이 생긴다.
+
+-background:URL("이미지 경로.jpg") scroll;
+
+(2) fixed - 이미지가 정지, 스크롤만 움직임
+-background:URL("이미지 경로.jpg") fixed;
+
+(3) no-repeat - 배경 이미지를 한번만 표시한다.
+-background:URL("이미지 경로.jpg") no-repeat;
+
+속성 값으로 좌우(right,center,left), 위아래(top,center,bottom) 설정
+
+-background:URL("이미지 경로.jpg") right top no-repeat;
+
+(4) repeat-x
+
+-background:URL("이미지 경로.jpg") repeat-x;
+
+(5) repeat-y
+
+-background:URL("이미지 경로.jpg") repeat-y;
+*/
+
+.red {
+    color:red;
+}
+
+body {
+    background-image: url(../IMAGE/irin.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+
+div {
+    background-color:rgba(235, 171, 171, 0.5);
+    width:60%;
+    height:auto;
+    margin-left:5%;
+}
