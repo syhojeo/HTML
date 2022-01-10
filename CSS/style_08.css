@@ -1,0 +1,27 @@
+/* 태그 별로 설정 적용하기 */
+ul {
+    list-style-type: none;
+}
+
+li {
+    width: 150px;
+    display: inline;
+    float: left;
+    margin: 10px;
+}
+
+a {
+    /* 
+        padding: 간격
+        height: 5px, width: 20px
+    */
+    padding: 5px 20px;
+    font-size: 12px;
+    color: red;
+}
+
+/* a태그의 href속성까지 설정 */
+a[href] {
+    background-color: gray;
+    color: black;
+}
