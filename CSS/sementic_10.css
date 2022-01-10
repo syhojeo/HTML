@@ -1,0 +1,42 @@
+
+* {margin: 0; padding:0; font-size: 24px; color: crimson}
+a {color: #333; text-decoration: none;}
+li {list-style: none;}
+table {border-spacing: 0;}
+
+#wrap {width: 1200px; margin: 0px auto;}
+
+/* header */
+#header {text-align: center; background: #7e57c2;}
+#header .logo {float: left; width: 250px; height: 100px; line-height: 100px; background: #d1c4e9;}
+#header .nav {float: right; width: 600px; margin-top: 28px; background: #b39ddb;}
+/* 
+    position: relative
+    부모태그 기준으로 위, 아래, 왼쪽, 오른쪽 위치를 지정
+
+    position: absolute
+    페이지를 기준으로 위치를 지정
+*/
+#header .nav li {position: relative; float: left; width: 25%; text-align: center;}
+#header .nav li a {padding: 10px; display: block; font-size: 20px; color: #fff;}
+#header .nav li a:hover {background-color:rgba(0,0,0,0.4);}
+#header .nav li ul.submenu {display: none; position: absolute; left:0; top: 44px;
+background: #b39ddb; height: 176px;}
+#header .nav li ul.submenu li { width: 100%; border-right:0;}
+
+/* banner */
+#banner {text-align: center; height: 400px; line-height: 400px; background-color: #9575cd;}
+
+/* contents */
+#contents { text-align: center;}
+#contents > div {float: left; width: 33.333333%; height: 247px; line-height: 247px;}
+#contents > div.cont1 {background: #7e57c2;}
+#contents > div.cont2 {background: #673ab7;}
+#contents > div.cont3 {background: #5e35b1;}
+
+/* footer */
+#footer {height: 100px; line-height: 100px; text-align: center;}
+#footer > div {float: left; width: 33.3333333%; height: 247px; line-height: 247px;}
+#footer .foot1 {float:left; whidth: 200px; background-color: #5e35b1;}
+#footer .foot2 {float:left; whidth: 800px; background-color: #512da8;}
+#footer .foot3 {float:left; whidth: 200px; background-color: #4527a0;}
