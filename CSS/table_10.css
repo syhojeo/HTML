@@ -1,5 +1,6 @@
+/* tableì„ ì´ìš©í•œ ì…€ ì„¤ì • css */
 table {
-    /* tableÀÇ Å×µÎ¸®¿Í ¼¿(td) Å×µÎ¸® »çÀÌÀÇ °£°İÀ» Á¦°Å */
+    /* tableì˜ í…Œë‘ë¦¬ì™€ ì…€(td) í…Œë‘ë¦¬ ì‚¬ì´ì˜ ê°„ê²©ì„ ì œê±° */
     border-collapse: collapse;
     border: 2px solid black;
 }  
