@@ -1,0 +1,9 @@
+/* 태그 별로 설정 적용하기 */
+h2 {
+    font-size: 20px;
+    color: red;
+
+}
+p {
+    color: blue;
+}
