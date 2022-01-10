@@ -1,0 +1,9 @@
+/* 배경 이미지 넣기 */
+
+body {
+    background-image: url(../IMAGE/tree.jpg);
+    /* 배경패턴이 들어갈만큼 채우고 여백은 공백처리*/
+    background-repeat: space;
+    /* 배경이미지가 시작되는 위치 설정 */
+    background-position: left top;
+}
