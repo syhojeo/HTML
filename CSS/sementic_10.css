@@ -1,4 +1,4 @@
-
+/* header, banner contents, footer 시맨틱 stylesheet */
 * {margin: 0; padding:0; font-size: 24px; color: crimson}
 a {color: #333; text-decoration: none;}
 li {list-style: none;}
