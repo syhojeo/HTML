@@ -1,0 +1,156 @@
+<!-- table 추가 설정 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ex th {
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+
+        #ex td {
+            background-color: rgb(192, 150, 231);
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- table 높이 넓이 설정 -->
+    <div>
+        <table border="1">
+            <caption>table 높이 넓이 설정</caption>
+            <tr>
+                <td width="80 align="center" rowspan="2">
+                    <font size=4><b>네이버<br/>아파트</b></font>
+                </td>
+    
+                <td width="120" height="30">
+                    <font size=2>&nbsp; 매매가 : 금액</font>
+                </td>
+            </tr>
+    
+            <tr>
+                <td height="30">
+                    <font size=2>&nbsp;평형 : 평수</font>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br/><br/><br/><br/>
+    
+    <!-- 텍스트 정렬 높이 넓이 배경 -->
+    <div>
+        <table border="1">
+            <caption>텍스트 정렬 높이 넓이 배경</caption>
+            <tr align="center">
+                <th rowspan=2 width="80" bgcolor="red">국가/수도</th>
+                <td height="40" width="70" bgcolor="yellow">한국</td>
+                <td width="60" bgcolor="blue">미국</td>
+                <td width="50" bgcolor="green">일본</td>
+            </tr>
+
+            <tr align="center">
+                <td height="40" bgcolor="yellow">서울</td>
+                <td bgcolor="blue">워싱턴</td>
+                <td bgcolor="green">도쿄</td>
+            </tr>
+        </table>
+    </div>
+    <br/><br/><br/><br/>
+
+    <!-- 텍스트 중앙 정렬 높이 넓이 폰트-->
+    <div>
+        <table border="1">
+            <cpation>텍스트 중앙 정렬 높이 넓이 폰트</cpation>
+            <tr align="center">
+                <td height="30" width="70">Test1</td>
+                <td rowspan="2" width="70"><font color="red">Test3</font></td>
+            </tr>
+
+            <tr align="center">
+                <td height="30">Test2</td>
+            </tr>
+        </table>
+    </div>
+    <br/><br/><br/><br/>
+
+    <!-- 회원 정보 테이블 -->
+    <div>
+        <!-- cellpadding: 일반적인 padding 과 같다 셀 내부의 여백의 크기를 조절한다 -->
+        <table border="1" width="400" cellpadding="5">
+            <caption>회원 정보 테이블</caption>
+            <tr height="30">
+                <th colspan="2">
+                    <font size="5" color="blue">회원정보</font>
+                </th>
+            </tr>
+
+            <tr height="30">
+                <th width="25%">이름</th>
+                <td width="75%">홍길동</td>
+            </tr>
+
+            <tr height="30">
+                <th>성별</th>
+                <td>남자</td>
+            </tr>
+
+            <tr height="30">
+                <td colspan="2" align="right">정보 정확률 90% 이상</td>
+            </tr>
+        </table>
+    </div>
+    <br/><br/><br/><br/>
+
+    <!-- 칼럼 나누기 colspan, rowspan-->
+    <div>
+        <table border="1" width="300">
+            <tr align="center">
+                <td colspan="2" width="100%">100</td>
+            </tr>
+
+            <tr align="center">
+                <td rowspan="2" width="25%">200</td>
+                <td>300</td>
+            </tr>
+            <tr align="center">
+                <td>400</td>
+            </tr>
+        </table>
+    </div>
+    <br/><br/><br/><br/>
+
+    <div>
+        <table id="ex" border="1" width="500px">
+            <caption algin="left">실습</caption>
+            <tr align="center">
+                <th>1행 1열</th> <th>1행 2열</th> <th>1행 3열</th> <th> 1행 4열</th>
+            </tr>
+            
+            <tr>
+                <th rowspan="2">2행 1열</th> <td colspan="2">2행 2열</td><td rowspan="3">2행 4열</td>
+            </tr>
+            
+            <tr>
+                <td>3행 2열</td> <td>3행 3열</td>
+            </tr>
+
+            <tr>
+                <th>4행 1열</th> <td>4행 2열</td> <td>4행 3열</td>
+            </tr>
+            
+            <tr>
+                <th>5행 1열</th> <td colspan="3">5행 2열</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
