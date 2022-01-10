@@ -1,0 +1,30 @@
+/* 배경화면으로 이미지 넣는 css */
+div {
+    width: 500px;
+    height: 500px;
+    border:2px double red;
+    margin-bottom: 20px;
+}
+
+.bg1{
+    background-image: url(../IMAGE/arin.jpg) ;
+    background-repeat: no-repeat;
+    background-position:left top;         
+}
+.bg2{
+    background-image: url(../IMAGE/hanhyojoo.jpg) ;
+    background-repeat: no-repeat;
+    background-position:left top;          
+}
+
+.bg3{
+    background-image: url(../IMAGE/heri.jpg) ;
+    background-repeat: no-repeat;
+    background-position:left top;          
+}
+
+.bg4{
+    background-image: url(../IMAGE/winter.jpg) ;
+    background-repeat: no-repeat;
+    background-position:right top;   
+}
